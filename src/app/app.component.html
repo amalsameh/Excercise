@@ -1,0 +1,11 @@
+<h1>
+  {{title}}
+</h1>
+
+<div>
+  <ul>
+    <li *ngFor="post of posts | mypipe">
+      <mypost [data]="post" *ngIf="!post"></mypost>
+    </li>
+  </ul>
+</div>
